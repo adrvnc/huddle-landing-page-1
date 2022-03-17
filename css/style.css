@@ -39,10 +39,7 @@ p {
 }
 
 .social-icons {
-	display: flex;
-	list-style-type: none;
-	padding: 0 5%;
-	justify-content: flex-end;
+	text-align: right;
 }
 
 .social-icons a {
@@ -57,13 +54,21 @@ p {
 	width: 40px;
 }
 
+.social-icons a:hover i {
+	color: hsl(300, 69%, 71%) !important;
+}
+
+ .social-icons a:hover  {
+	border-color: hsl(300, 69%, 71%) !important;
+}
+
 @media only screen and (max-width: 768px) {
-	#call-to-action {
+	#call-to-action, .social-icons {
 		text-align: center;
 	}
 
 	.social-icons {
-		justify-content: center;
 		margin-top: 50px;
+		margin-right: 20px;
 	}
 }
